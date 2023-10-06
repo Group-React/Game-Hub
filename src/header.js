@@ -8,9 +8,9 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 function Neav() {
   return (
     
-  <Navbar expand="lg" className="bg-body-tertiary"  data-bs-theme="dark">
+  <Navbar expand="lg" className="bg-body-tertiary"  data-bs-theme="dark" class="navbar">
       <Container fluid>
-        <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+        <Navbar.Brand href="#">Gaming_hub</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -20,6 +20,7 @@ function Neav() {
           >
             <Nav.Link href="#action1">Store</Nav.Link>
             <Nav.Link href="#action2">Library</Nav.Link>
+            
             <NavDropdown title="Link" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action4">
@@ -33,7 +34,9 @@ function Neav() {
             <Nav.Link href="#" disabled>
               Link
             </Nav.Link>
+            <Nav.Link href="#action3" style={{marginLeft:"310%"}}>cart</Nav.Link>
           </Nav>
+          
           <Form className="d-flex">
             <Form.Control
               type="search"
