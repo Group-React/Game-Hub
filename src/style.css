@@ -1,0 +1,15 @@
+.navbar{
+background: transparent;
+height: 80px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 1.2rem;
+position: sticky;
+top: 0;
+z-index: 999;
+}
+.card{
+    width: 700;
+    background-color: white;
+}
