@@ -1,20 +1,32 @@
-async function gamedata(){
-    const url = 'https://free-to-play-games-database.p.rapidapi.com/api/games';
-const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': 'f87c9a307emsh4cdf243b35b30f0p182621jsnf625afbaee4a',
-		'X-RapidAPI-Host': 'free-to-play-games-database.p.rapidapi.com'
-	}
-};
+import Mainc from "./mainCard";
 
-try {
-	const response = await fetch(url, options);
-	const result = await response.text();
-	console.log(result);
-} catch (error) {
-	console.error(error);
-}
+import { useState } from 'react';
 
+function Arr(){
+    let [item,setItem]=useState([]);
+    async function Meal(){
+        let api=await fetch('https://www.mmobomb.com/api1/games')
+        let data=await api.json();
+        setItem(data.meals)
+    }     
+    
+    
+    
+    return(
+        <>
+        <div className='map'>
+            {item.map(function(Item){
+                return(
+                  <>
+                  <Mainc image={Item.thumbnail} title={Item.title} descripion={Item.strInstructions}  />
+                  </>
+                )
+            }
+            )
+        }
+            
+        </div>
+        </>
+    )
 }
-export default gamedata;
+export default Arr;

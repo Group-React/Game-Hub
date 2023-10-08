@@ -2,9 +2,9 @@ import Carousel from 'react-bootstrap/Carousel';
 
 
 
-function Mainc() {
+function Mainc(Item) {
   return (
-    <Carousel data-bs-theme="dark" style={{marginTop:"4%",}}   >
+    <Carousel data-bs-theme="" style={{marginTop:"4%" }}  >
       <Carousel.Item>
         <img
          
@@ -13,12 +13,12 @@ function Mainc() {
       
           width={"700"}
           height={"400"}
-          src="https://th.bing.com/th/id/OIP.iSu2RcCcdm78xbxNDJMJSgHaEo?w=250&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
-          alt="First slide"
+          src={Item.image}
+          alt={Item.title}
         />
         <Carousel.Caption>
-          <h5>First slide label</h5>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h5>{Item.title}</h5>
+          <p>{Item.title}</p>
           
         </Carousel.Caption>
         
