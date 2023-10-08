@@ -13,12 +13,12 @@ function Mainc(Item) {
       
           width={"700"}
           height={"400"}
-          src={Item.image}
-          alt={Item.title}
+          src="https://www.mmobomb.com/g/1136/thumbnail.jpg"
+          alt="Overwatch 2"
         />
         <Carousel.Caption>
-          <h5>{Item.title}</h5>
-          <p>{Item.title}</p>
+          <h5>"Overwatch 2"</h5>
+          
           
         </Carousel.Caption>
         
@@ -30,12 +30,12 @@ function Mainc(Item) {
           width={"700"}
           height={"400"}
           className="d-block "
-          src="https://th.bing.com/th/id/OIP.iSu2RcCcdm78xbxNDJMJSgHaEo?w=250&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
-          alt="Second slide"
+          src="https://www.mmobomb.com/g/523/thumbnail.jpg"
+          alt="Lost Ark"
         />
         <Carousel.Caption>
-          <h5>Second slide label</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h5>Lost Ark</h5>
+          
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -46,14 +46,11 @@ function Mainc(Item) {
       
           width={"700"}
           height={"400"}
-          src="https://th.bing.com/th/id/OIP.iSu2RcCcdm78xbxNDJMJSgHaEo?w=250&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
-          alt="Third slide"
+          src="https://www.mmobomb.com/g/1113/thumbnail.jpg"
+          alt="PUBG: BATTLEGROUNDS"
         />
         <Carousel.Caption>
-          <h5>Third slide label</h5>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
+          <h5>PUBG: BATTLEGROUNDS</h5>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

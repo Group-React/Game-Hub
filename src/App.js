@@ -3,18 +3,21 @@ import './App.css';
 import Neav from './header.js';
 import Mainc from './mainCard';
 import { enableDismissTrigger } from './test';
-import Arr from './arrGame';
 import Footer from './fotter';
+import Card1 from './card';
+import M from './map.json'
+import Arr from './arrGame'
+
 
 function App() {
   return (
     <div>
-      <Arr/>
-      <Neav/>
       
+      <Neav/>
       <Mainc/>
-      <Footer/>
-      <enableDismissTrigger/>
+      <Arr/>
+      
+     
       
     </div>
   );
