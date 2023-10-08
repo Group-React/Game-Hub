@@ -18,7 +18,7 @@ function Mainc(Item) {
         />
         <Carousel.Caption>
           <h5>"Overwatch 2"</h5>
-          <p>{Item.title}</p>
+          
           
         </Carousel.Caption>
         
@@ -34,8 +34,8 @@ function Mainc(Item) {
           alt="Lost Ark"
         />
         <Carousel.Caption>
-          <h5>Second slide label</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h5>Lost Ark</h5>
+          
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -50,10 +50,7 @@ function Mainc(Item) {
           alt="PUBG: BATTLEGROUNDS"
         />
         <Carousel.Caption>
-          <h5>Third slide label</h5>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
+          <h5>PUBG: BATTLEGROUNDS</h5>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
