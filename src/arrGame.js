@@ -51,13 +51,14 @@ const options = {
 useEffect (function(){{games()}},[])
 return(
     <>
-    <Form className="d-flex"  onSubmit={datagames} id="Search">
+    <Form className="d-flex"  onSubmit={datagames} id="Search" >
         <Form.Control
           type="search"
           placeholder="Search"
           className="me-2"
           aria-label="Search"
           name="h"
+        style={{backgroundColor:""}}
         />
         <Button variant="outline-success" type='Submit'>Search</Button>
     </Form>
@@ -67,10 +68,11 @@ return(
             return(
               <>
               <Card1 image={Item.thumbnail} title={Item.title} descripion={Item.short_description}  showFavorites={true} />
+              
               </>
             )
         }
-        ):<h3 style={{marginLeft:"40%",marginTop:"10%"}}>no Searche resolt</h3>
+        ):<h3 style={{marginLeft:"40%",marginTop:"10%", color:"white"}}>No searche resolt</h3>
         }
     </div>
     </>

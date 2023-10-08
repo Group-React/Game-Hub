@@ -1,21 +1,28 @@
-import logo from './logo.svg';
+
 import './App.css';
 import Neav from './header.js';
 import Mainc from './mainCard';
-import { enableDismissTrigger } from './test';
-import Footer from './fotter';
-import Card1 from './card';
-import M from './map.json'
 import Arr from './arrGame'
-
+import { BrowserRouter as Router,Routes,Route} from 'react-router-dom';
+import Favorit from './Library';
 
 function App() {
   return (
     <div>
-      
       <Neav/>
-      <Mainc/>
-      <Arr/>
+      <Router>
+    <Routes>
+      <Route path='/'Component={Mainc}></Route>
+      <Route path='/Store'Component={Arr}></Route>
+      <Route path='/Library'Component={Favorit}></Route>
+    </Routes>
+    </Router>
+      
+
+
+
+      
+      
       
      
       
