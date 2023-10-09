@@ -99,11 +99,10 @@ return(
     
         width={"700"}
         height={"400"}
-        src="https://www.mmobomb.com/g/1136/thumbnail.jpg"
-        alt="Overwatch 2"
+        src="https://www.mmobomb.com/g/452/thumbnail.jpg"
       />
       <Carousel.Caption>
-        <h5>"Overwatch 2"</h5>
+        <h5>"Call Of Duty: Warzone"</h5>
         
         
       </Carousel.Caption>
@@ -116,11 +115,10 @@ return(
         width={"700"}
         height={"400"}
         className="d-block "
-        src="https://www.mmobomb.com/g/523/thumbnail.jpg"
-        alt="Lost Ark"
+        src="https://www.mmobomb.com/g/12/thumbnail.jpg"
       />
       <Carousel.Caption>
-        <h5>Lost Ark</h5>
+        <h5>"War Thunder"</h5>
         
       </Carousel.Caption>
     </Carousel.Item>
@@ -132,11 +130,10 @@ return(
     
         width={"700"}
         height={"400"}
-        src="https://www.mmobomb.com/g/1113/thumbnail.jpg"
-        alt="PUBG: BATTLEGROUNDS"
+        src="https://www.mmobomb.com/g/23/thumbnail.jpg"
       />
       <Carousel.Caption>
-        <h5>PUBG: BATTLEGROUNDS</h5>
+        <h5>"Apex Legends"</h5>
       </Carousel.Caption>
     </Carousel.Item>
   </Carousel>
