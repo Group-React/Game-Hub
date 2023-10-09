@@ -22,12 +22,12 @@ function Neav() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="/Store">Store</Nav.Link>
+            <Nav.Link href="/">Store</Nav.Link>
             <Nav.Link href="/Library">Library</Nav.Link>
             
             <NavDropdown title="Link" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">Categories</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
+              <NavDropdown.Item href="/News">
                 News
               </NavDropdown.Item>
               <NavDropdown.Divider />

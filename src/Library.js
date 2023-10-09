@@ -75,8 +75,8 @@ function Favorit (){
                 </>
             )
         }
-    ) : <h3 style={{color:'white'}}>No Game in Library</h3>}
-    <Pagination size="sm" style={{marginLeft:"16%", position:"",}}>{paginationItems}</Pagination>
+    ) : <h3 style={{color:'white',marginLeft:"40%" , marginTop:"20%"}}>No Game in Library</h3>}
+    <Pagination size="sm" style={{marginLeft:"16%", position:"absolute"}}>{paginationItems}</Pagination>
     </div>
         </>
     )

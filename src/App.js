@@ -5,6 +5,7 @@ import Mainc from './mainCard';
 import Arr from './arrGame'
 import { BrowserRouter as Router,Routes,Route} from 'react-router-dom';
 import Favorit from './Library';
+import Profile from './profile';
 
 function App() {
   return (
@@ -12,8 +13,12 @@ function App() {
     <Neav/>
     <Router>
     <Routes>
-      <Route path='/Store'Component={Arr}></Route>
+   
+      <Route path='/'Component={Arr}></Route>
       <Route path='/Library'Component={Favorit}></Route>
+      <Route path='/profile'Component={Profile}></Route>
+
+      
     </Routes>
     </Router>
     </div>
