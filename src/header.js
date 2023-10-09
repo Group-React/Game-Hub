@@ -14,7 +14,7 @@ function Neav() {
     
   <Navbar expand="lg" className="bg-body-tertiary"  data-bs-theme="dark" class="navbar">
       <Container fluid>
-        <Navbar.Brand href="/">Gaming_hub</Navbar.Brand>
+        <Navbar.Brand href="">Gaming_hub</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -28,14 +28,13 @@ function Neav() {
             <NavDropdown title="Link" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">Categories</NavDropdown.Item>
               <NavDropdown.Item href="#action4">
-                Another action
+                News
               </NavDropdown.Item>
               <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">
-                Something else here
+              <NavDropdown.Item href="/profile">
+                Profile
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#action3" style={{marginLeft:"310%"}}>cart</Nav.Link>
           </Nav>
         </Navbar.Collapse>
         {isAuthenticated?

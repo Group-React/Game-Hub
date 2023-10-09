@@ -9,23 +9,13 @@ import Favorit from './Library';
 function App() {
   return (
     <div>
-      <Neav/>
-      <Router>
+    <Neav/>
+    <Router>
     <Routes>
-      <Route path='/'Component={Mainc}></Route>
       <Route path='/Store'Component={Arr}></Route>
       <Route path='/Library'Component={Favorit}></Route>
     </Routes>
     </Router>
-      
-
-
-
-      
-      
-      
-     
-      
     </div>
   );
 }
