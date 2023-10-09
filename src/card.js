@@ -49,7 +49,7 @@ function Card1(data) {
        
       </Button> 
       <div >
-          {isAuthenticated && data.showFavorites? <Button onClick={LocalStorage}>Add to Favorites</Button>
+          {isAuthenticated && data.showFavorites? <Button onClick={LocalStorage}>Add to Library</Button>
           : <Button onClick={LocalStorage} style={{display:"none"}}>Add to Favorites</Button>}
           {data.showDelete?<Button onClick={data.handleDelete}>Delete</Button>
           :<Button onClick={data.handleDelete} style={{display:"none"}}>Delete</Button>}

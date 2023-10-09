@@ -141,7 +141,7 @@ return(
     </Carousel.Item>
   </Carousel>
   
-    <Form className="d-flex"  onSubmit={datagames} id="Search" >
+    <Form className="d-flex"  onSubmit={datagames} id="Search" style={{marginRight:"17%",marginLeft:"18%"}}>
         <Form.Control
           type="search"
           placeholder="Search"
@@ -164,7 +164,7 @@ return(
         }
         ):<h3 style={{marginLeft:"40%",marginTop:"10%", color:"white"}}>No searche resolt</h3>
         }
-        <Pagination size="sm" style={{marginLeft:"16%", position:""}}>{paginationItems}</Pagination>
+        <Pagination size="sm" style={{marginLeft:"16%", marginBottom:"10%", position:"absolute"}}>{paginationItems}</Pagination>
     </div>
     </>
 )
