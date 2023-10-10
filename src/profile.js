@@ -23,7 +23,7 @@ function Profile(){
        
          
          </div>:
-          <h1 style={{color:'white',textAlign:"center"}}> you must login first</h1>}
+          <h1></h1>}
             
           
           

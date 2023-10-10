@@ -39,29 +39,30 @@ function Card1(data) {
   return (
     <>
     <div style={{display:"flex",marginTop:"3%",justifyContent:"space-between", flexWrap:"warp"}}>
-        <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src={data.image}/>
+        <Card id="design">
+        <Card.Img style={{borderRadius: "30px"}} variant="top" src={data.image}/>
         <Card.Body>
-        <Card.Title>{data.title}</Card.Title>
+        <Card.Title style={{color: "#ffffff"}}>{data.title}</Card.Title>
         <Card.Text>
-        <Button variant="primary" onClick={handleShow}>
+        <Button id="descriptionGame" variant="primary" onClick={handleShow}>
         description Game
        
       </Button> 
       <div >
-          {isAuthenticated && data.showFavorites? <Button onClick={LocalStorage}>Add to Library</Button>
-          : <Button onClick={LocalStorage} style={{display:"none"}}>Add to Favorites</Button>}
-          {data.showDelete?<Button onClick={data.handleDelete}>Delete</Button>
-          :<Button onClick={data.handleDelete} style={{display:"none"}}>Delete</Button>}
+          {isAuthenticated && data.showFavorites? <Button id="AddToFavorites" onClick={LocalStorage}>Add to Library</Button>
+          : <Button id="AddToFavorites" onClick={LocalStorage} style={{display:"none"}}>Add to Library</Button>}
+          {data.showDelete?<Button id="Delete" onClick={data.handleDelete}>Delete</Button>
+          :<Button id="Delete" onClick={data.handleDelete} style={{display:"none"}}>Delete</Button>}
         </div>
       <Modal show={show} onHide={handleShow} backdrop="static" keyboard={false}>
         <Modal.Header closeButton>
-          <Modal.Title>{data.title}</Modal.Title>
+          <Modal.Title>{data.title} </Modal.Title>
         </Modal.Header>
         <Modal.Body>
           {data.descripion}
         </Modal.Body>
         <Modal.Footer>
+          <h4>(For Free)</h4>
           <Button variant="secondary" onClick={handleShow}>
             Close
           </Button>

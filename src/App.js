@@ -6,6 +6,7 @@ import Arr from './arrGame'
 import { BrowserRouter as Router,Routes,Route} from 'react-router-dom';
 import Favorit from './Library';
 import Profile from './profile';
+import Information from './arrNews';
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
       <Route path='/'Component={Arr}></Route>
       <Route path='/Library'Component={Favorit}></Route>
       <Route path='/profile'Component={Profile}></Route>
-
+      <Route path='/News'Component={Information}></Route>
       
     </Routes>
     </Router>

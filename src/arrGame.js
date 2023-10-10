@@ -32,8 +32,8 @@ try {
 }
     }
     async function datagames(event){
-        event.preventDefault();
-        let sh=event.target.h.value;
+        //event.preventDefault();
+        let sh=event.target.value;
         const url = 'https://mmo-games.p.rapidapi.com/games';
 const options = {
 	method: 'GET',
@@ -96,58 +96,45 @@ return(
        
         className="d-block"
         style={{marginLeft:"28%"}}
-    
+        id="mainImg"
         width={"700"}
         height={"400"}
         src="https://www.mmobomb.com/g/452/thumbnail.jpg"
-      />
-      <Carousel.Caption>
-        <h5>"Call Of Duty: Warzone"</h5>
-        
-        
-      </Carousel.Caption>
-      
-    </Carousel.Item>
+      />   
+      </Carousel.Item>
     <Carousel.Item>
       <img
       style={{marginLeft:"28%"}}
-    
+      id="mainImg2"
         width={"700"}
         height={"400"}
         className="d-block "
         src="https://www.mmobomb.com/g/12/thumbnail.jpg"
       />
-      <Carousel.Caption>
-        <h5>"War Thunder"</h5>
-        
-      </Carousel.Caption>
     </Carousel.Item>
     <Carousel.Item>
       <img
        
       className="d-block"
       style={{marginLeft:"28%"}}
-    
+      id="mainImg3"
         width={"700"}
         height={"400"}
         src="https://www.mmobomb.com/g/23/thumbnail.jpg"
       />
-      <Carousel.Caption>
-        <h5>"Apex Legends"</h5>
-      </Carousel.Caption>
     </Carousel.Item>
   </Carousel>
   
-    <Form className="d-flex"  onSubmit={datagames} id="Search" style={{marginRight:"17%",marginLeft:"18%"}}>
+    <Form  className="d-flex"  onChange={datagames} id="Search">
         <Form.Control
           type="search"
           placeholder="Search"
           className="me-2"
           aria-label="Search"
           name="h"
-        style={{backgroundColor:"", marginRight:"%"}}
+          id="searchBox"
         />
-        <Button variant="outline-success" type='Submit'>Search</Button>
+        <Button id="searchButton" variant="outline-success" type='Submit'>Search</Button>
     </Form>
     
     <div className='map'>
@@ -159,9 +146,9 @@ return(
               </>
             )
         }
-        ):<h3 style={{marginLeft:"40%",marginTop:"10%", color:"white"}}>No searche resolt</h3>
+        ):<h3 style={{marginLeft:"40%",marginTop:"2%", color:"white"}}>"Sorry, No searche result"</h3>
         }
-        <Pagination size="sm" style={{marginLeft:"16%", marginBottom:"10%", position:"absolute"}}>{paginationItems}</Pagination>
+        <Pagination id="Peg" size="sm" style={{marginLeft:"16%", marginBottom:"10%", position:"absolute"}} >{paginationItems}</Pagination>
     </div>
     </>
 )
