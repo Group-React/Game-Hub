@@ -2,7 +2,7 @@
   text-align: center;
 }
 body{
-  background-color: #282c34;
+  background: linear-gradient(270deg, #136e92, #0f3f79, #09032e);
 }
 
 .App-logo {
@@ -211,6 +211,13 @@ body{
   margin-left: 2%;
   margin-right: 2%;
 }
+
+#Navbar{
+  font-family: monospace;
+  background: linear-gradient(270deg, #1e1c34, #40536b, #7ab6ff);
+}
+
+
 #Search{
   margin-top: 3%;
   margin-left: 20%;
@@ -231,3 +238,137 @@ body{
   
 }
 
+#design{
+  width: 18rem;
+  padding: 20px;
+  background: linear-gradient(90deg, #1e1c34, #2f5584, #3890fa);
+  box-shadow: 0 5px 10px rgba(255, 255, 255, 0.4);
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out; /* important to use a symmetrical timing function (linear also works) */
+  animation-fill-mode: forwards;
+  border-radius: 15%;
+}
+
+#searchBox{
+  border: transparent;
+  background: linear-gradient(90deg, #ffffff, #3890fa);
+  box-shadow: 0 5px 10px rgba(255, 255, 255, 0.4);
+  box-shadow:0 10px 20px #0006;
+  margin-right:"%";
+  border-radius: 20px;
+  color: #ffffff;
+}
+
+
+  #searchButton{
+    border-radius: 20px;
+    color: #09032e;
+    border-color: #09032e;
+    background-color:transparent;
+  }
+
+  #descriptionGame{
+    margin-bottom: 7%;
+    border: transparent;
+    border-radius: 20px;
+    background: linear-gradient(270deg, #1cb2ed, #0f3f79, #09032e);
+    color: #ffffff;
+  }
+
+#AddToFavorites{
+  border: transparent;
+  border-radius: 20px;
+  background: linear-gradient(270deg, #1cb2ed, #0f3f79, #09032e);
+  color: #ffffff;
+}
+
+
+#Delete{
+  background: linear-gradient(90deg, #b20a0a, #b2560a);
+  border-radius: 20px;
+}
+
+#showMore{
+  border: transparent;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #1cb2ed, #0f3f79, #09032e);
+  color: #ffffff;
+  width: 200px;
+  font-family: cursive;
+}
+
+
+#Pag{
+  border-color: #000000;
+  margin-left: 16%;
+  font-family: Courier;
+  border-radius: 20%;
+  
+}
+
+
+#searchButton:hover{
+  border-color: #1cb2ed;
+  border-radius: 20px;
+  color:#1cb2ed; 
+  
+}
+
+
+
+
+#descriptionGame:hover{
+  background: linear-gradient(270deg, #09032e, #09032e);
+
+}
+
+#AddToFavorites:hover{
+  background: linear-gradient(270deg, #09032e, #09032e);
+}
+
+#Delete:hover{
+  background: linear-gradient(270deg, #b20a0a, #b20a0a);
+
+}
+
+#showMore:hover{
+  background: linear-gradient(270deg, #1cb2ed, #1cb2ed);
+}
+
+#mainImg{
+  border-radius: 100px;
+  padding: 10px;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out; /* important to use a symmetrical timing function (linear also works) */
+  animation-fill-mode: forwards;
+  background: linear-gradient(180deg, #ffffff, #a4a1a1);
+}
+
+
+#mainImg2{
+  border-radius: 100px;
+  padding: 10px;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out; /* important to use a symmetrical timing function (linear also works) */
+  animation-fill-mode: forwards;
+  background: linear-gradient(180deg, rgb(187, 193, 194), #262424);
+}
+
+
+#mainImg3{
+  border-radius: 100px;
+  padding: 10px;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out; /* important to use a symmetrical timing function (linear also works) */
+  animation-fill-mode: forwards;
+  background: linear-gradient(90deg, #c01313, #bcbeb4);
+}
+
+#drop{
+  color: #1e1c34;
+}
+#userButton{
+  border-radius: 20px;
+  background-color: transparent;
+  border:transparent;
+}

@@ -72,10 +72,14 @@ function Favorit (){
               <>
                 <Card1 image={item.image} title={item.title} descripion={item.short_description} showFavorites={false}  index = {index} 
                 handleDelete={()=>{handleDelete(index)}} key={index} email={user.email} showDelete={true}/>
+                
                 </>
             )
         }
-    ) : <h3 style={{color:'white',marginLeft:"40%" , marginTop:"20%"}}>No Game in Library</h3>}
+    )
+     
+    : <><h3 style={{color:'white',marginLeft:"40%" , marginTop:"20%"}}>No Game in Library</h3>
+        </>}
     <Pagination size="sm" style={{marginLeft:"16%", position:"absolute"}}>{paginationItems}</Pagination>
     </div>
         </>

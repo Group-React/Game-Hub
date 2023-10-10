@@ -2,7 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import Favorit from './Library';
+import { Button } from 'react-bootstrap';
 import LoginButton from './login';
 import { useAuth0 } from '@auth0/auth0-react';
 import LogoutButton from './logout';
@@ -12,9 +12,9 @@ function Neav() {
   console.log(user)
   return (
     
-  <Navbar expand="lg" className="bg-body-tertiary"  data-bs-theme="dark" class="navbar">
+  <Navbar expand="lg" className="bg-body-tertiary"  data-bs-theme="dark" id="Navbar">
       <Container fluid>
-        <Navbar.Brand href="">Gaming_hub</Navbar.Brand>
+        <Navbar.Brand href="" style={{color: "#1e1c34",fontWeight:"bolder"}}>Geeks Store</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -22,17 +22,13 @@ function Neav() {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="/">Store</Nav.Link>
-            <Nav.Link href="/Library">Library</Nav.Link>
+            <Nav.Link href="/" style={{color: "#1e1c34"}}>Store</Nav.Link>
+            <Nav.Link href="/Library" style={{color: "#1e1c34"}}>Library</Nav.Link>
             
-            <NavDropdown title="Link" id="navbarScrollingDropdown">
+            <NavDropdown  title="More" id="drop">
               <NavDropdown.Item href="#action3">Categories</NavDropdown.Item>
               <NavDropdown.Item href="/News">
                 News
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="/profile">
-                Profile
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
@@ -40,8 +36,7 @@ function Neav() {
         {isAuthenticated?
         <>
          <LogoutButton/>
-         <img src={user.picture} style={{width:"35px", height:"35px", margin:"0 10px 0 10px"}}></img>
-         <h6 style={{color:'white'}}>{user.name}</h6>
+         <Button href="/profile" id="userButton"><img src={user.picture} style={{width:"35px", height:"35px", margin:"0 10px 0 10px", borderRadius: "20px"}}></img></Button>
          </>:
          <LoginButton/> }
       </Container>
