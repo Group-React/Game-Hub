@@ -256,7 +256,7 @@ body{
   box-shadow:0 10px 20px #0006;
   margin-right:"%";
   border-radius: 20px;
-  color: #ffffff;
+  color: #000000;
 }
 
 
@@ -371,4 +371,13 @@ body{
   border-radius: 20px;
   background-color: transparent;
   border:transparent;
+  
 }
+#logout{
+  border-radius: 20px;
+}
+#profile{
+  box-shadow: 0 5px 10px rgb(255, 255, 255);
+  border-radius: 20px;
+}
+
