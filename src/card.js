@@ -38,7 +38,7 @@ function Card1(data) {
   }
   return (
     <>
-    <div style={{display:"flex",marginTop:"3%",justifyContent:"space-between", flexWrap:"warp"}}>
+    <div style={{display:"flex",marginTop:"3%",justifyContent:"space-between", flexWrap:"warp",fontFamily: "cursive"}}>
         <Card id="design">
         <Card.Img style={{borderRadius: "30px"}} variant="top" src={data.image}/>
         <Card.Body>
@@ -54,16 +54,16 @@ function Card1(data) {
           {data.showDelete?<Button id="Delete" onClick={data.handleDelete}>Delete</Button>
           :<Button id="Delete" onClick={data.handleDelete} style={{display:"none"}}>Delete</Button>}
         </div>
-      <Modal show={show} onHide={handleShow} backdrop="static" keyboard={false}>
-        <Modal.Header closeButton>
+      <Modal style={{marginTop:"15%",fontFamily: "cursive"}} show={show} onHide={handleShow} backdrop="static" keyboard={false}>
+        <Modal.Header id="modal" closeButton>
           <Modal.Title>{data.title} </Modal.Title>
         </Modal.Header>
-        <Modal.Body>
+        <Modal.Body id="modal" >
           {data.short_description}
         </Modal.Body>
-        <Modal.Footer>
+        <Modal.Footer id="modal" >
           <h4>(For Free)</h4>
-          <Button variant="secondary" onClick={handleShow}>
+          <Button id="modelButton" variant="secondary" onClick={handleShow}>
             Close
           </Button>
         </Modal.Footer>
