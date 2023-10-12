@@ -6,7 +6,7 @@ import { useAuth0 } from '@auth0/auth0-react';
 
 function Favorit (){
     let [activePage, setActivePage] = useState(1);
-    let {isAuthenticated,user}=useAuth0()
+    let {isAuthenticated,user,isLoading}=useAuth0()
     console.log(user)
     let Favorites = localStorage.getItem("favorites");
     let favorites = JSON.parse(Favorites);
@@ -14,12 +14,27 @@ function Favorit (){
 
     function handleDelete (index) {
 
-        favorites.splice(index, 1)
-        let favoritesCopy = [...favorites]
-        setFavoritesState(favoritesCopy)
-        let Data = JSON.stringify(favoritesCopy)
-        localStorage.setItem("favorites", Data)
-      }
+     
+
+      favorites.splice(index, 1)
+
+      let favoritesCopy = [...favorites]
+
+      let filteredData = favoritesCopy.filter(function(item){
+
+        return user.email === item.email})
+
+        setFavoritesState(filteredData)
+
+       
+
+      // setFavoritesState(favoritesCopy)
+
+      let Data = JSON.stringify(favoritesCopy)
+
+      localStorage.setItem("favorites", Data)
+
+    }
       function favoritData (){
         console.log(isAuthenticated)
         if (isAuthenticated){
@@ -28,7 +43,15 @@ function Favorit (){
           setFavoritesState(filteredData)
         }
       }
-    useEffect(function(){favoritData()},[])
+      useEffect(() => {
+
+        if (!isLoading) {
+    
+          favoritData();
+    
+        }
+    
+      }, [isLoading]);
     
 
 

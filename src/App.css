@@ -247,6 +247,7 @@ body{
   animation-timing-function: ease-in-out; /* important to use a symmetrical timing function (linear also works) */
   animation-fill-mode: forwards;
   border-radius: 15%;
+  
 }
 
 #searchBox{
@@ -380,4 +381,30 @@ body{
   box-shadow: 0 5px 10px rgb(255, 255, 255);
   border-radius: 20px;
 }
+#modal{
+  background: linear-gradient(270deg, #1f1e1e,   #68878e);
+  color: white;
+}
+#modelButton{
+  background: transparent;
+  border-radius: 20px;
+}
+
+#modelButton:hover{
+  background-color:#68878e;
+  border-radius: 20px;
+}
+.page-link {
+  
+  border-top: transparent;
+  background-color:transparent;
+  border-radius: 30px;
+  border-left: transparent;
+  border-right: transparent;
+  color:white;
+  }
+  .page-link:hover{
+    background: linear-gradient(180deg, #ffffff, #3890fa);
+    color:black;
+  }
 
