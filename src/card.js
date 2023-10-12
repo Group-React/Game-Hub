@@ -59,7 +59,7 @@ function Card1(data) {
           <Modal.Title>{data.title} </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          {data.descripion}
+          {data.short_description}
         </Modal.Body>
         <Modal.Footer>
           <h4>(For Free)</h4>

@@ -20,57 +20,26 @@ function Favorit (){
         let Data = JSON.stringify(favoritesCopy)
         localStorage.setItem("favorites", Data)
       }
-    function favoritData(){
-        if(isAuthenticated){
-         let filterfavorit=favorites.fiter(function(item){
-         return user.email === item.email})
-         setFavoritesState(filterfavorit)
+      function favoritData (){
+        console.log(isAuthenticated)
+        if (isAuthenticated){
+          let filteredData = favorites.filter(function(item){
+          return user.email === item.email})
+          setFavoritesState(filteredData)
         }
-       
-    }
+      }
     useEffect(function(){favoritData()},[])
-    let startIndex = (activePage - 1) * 12;
+    
 
-    let endIndex = startIndex + 12;
-  
-    let gamesToDisplay = favoritesState.slice(startIndex, endIndex);
-  
-   
-  
-    let totalPages = Math.ceil(favoritesState.length / 12);
-  
-    let paginationItems = [];
-  
-    for (let number = 1; number <= totalPages; number++) {
-  
-      paginationItems.push(
-  
-        <Pagination.Item
-  
-          key={number}
-  
-          active={number === activePage}
-  
-          onClick={() => setActivePage(number)}
-  
-        >
-  
-          {number}
-  
-        </Pagination.Item>
-  
-      );
-  
-    }
 
     return(
         <>
         <div className="map">
     {isAuthenticated && favoritesState.length !==0 
-    ? gamesToDisplay.map(function(item, index){
+    ? favoritesState.map(function(item, index){
             return(
               <>
-                <Card1 image={item.image} title={item.title} descripion={item.short_description} showFavorites={false}  index = {index} 
+                <Card1 image={item.image} title={item.title} short_description={item.short_description} showFavorites={false}  index = {index} 
                 handleDelete={()=>{handleDelete(index)}} key={index} email={user.email} showDelete={true}/>
                 
                 </>
@@ -78,9 +47,8 @@ function Favorit (){
         }
     )
      
-    : <><h3 style={{color:'white',marginLeft:"40%" , marginTop:"20%"}}>No Game in Library</h3>
+    : <><h3 style={{color:'white',marginLeft:"40%" , marginTop:"10%",marginBottom:"10%"}}>No Game in Library</h3>
         </>}
-    <Pagination size="sm" style={{marginLeft:"16%", position:"absolute"}}>{paginationItems}</Pagination>
     </div>
         </>
     )

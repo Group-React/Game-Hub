@@ -141,14 +141,14 @@ return(
         {item && item.length !=0 ?gamesToDisplay.map(function(Item){
             return(
               <>
-              <Card1 image={Item.thumbnail} title={Item.title} descripion={Item.short_description}  showFavorites={true} />
+              <Card1 image={Item.thumbnail} title={Item.title} short_description={Item.short_description}  showFavorites={true} />
               
               </>
             )
         }
         ):<h3 style={{marginLeft:"40%",marginTop:"2%", color:"white"}}>"Sorry, No searche result"</h3>
         }
-        <Pagination id="Peg" size="sm" style={{marginLeft:"16%", marginBottom:"10%", position:"absolute"}} >{paginationItems}</Pagination>
+        <Pagination id="Peg" size="sm" style={{color:"white", marginLeft:"16%", marginBottom:"10%", position:"absolute"}} >{paginationItems}</Pagination>
     </div>
     </>
 )
