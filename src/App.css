@@ -262,10 +262,9 @@ body{
 
 
   #searchButton{
+    border-color: #1cb2ed;
     border-radius: 20px;
-    color: #09032e;
-    border-color: #09032e;
-    background-color:transparent;
+    color:#1cb2ed; 
   }
 
   #descriptionGame{
@@ -309,9 +308,10 @@ body{
 
 
 #searchButton:hover{
-  border-color: #1cb2ed;
-  border-radius: 20px;
-  color:#1cb2ed; 
+ border-radius: 20px;
+    color: #09032e;
+    border-color: #09032e;
+    background-color:transparent;
   
 }
 
@@ -407,4 +407,6 @@ body{
     background: linear-gradient(180deg, #ffffff, #3890fa);
     color:black;
   }
-
+  #img{
+    float: left;
+  }

@@ -9,14 +9,11 @@ function News(data) {
     <>
             <Container>
             <Row>
-              <Col xs={6} md={4} style={{ marginTop:"3%"}}>
-                <Image src={data.image} thumbnail/>
-              </Col>
-              <h3 style={{color: "#FFC300"}}>{data.ti}</h3>
-              <h6 style={{color: "#FFC300"}}>{data.description}</h6>
-              
-      
-
+              <div>
+                <img src={data.image}  style={{border:"5px solid #fff", borderRadius:"20px",width:"20%",float:"left",marginTop:"5%"}}></img>
+                <h3 style={{color: "#FFC300",marginTop:"13%",marginLeft:"21%"}}>{data.ti}</h3>
+                <h6 style={{color: "#FFC300",marginLeft:"21%"}}>{data.description}</h6>
+              </div>
               </Row>
           </Container>
     </>

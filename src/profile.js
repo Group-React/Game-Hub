@@ -11,7 +11,7 @@ function Profile(){
        
 
 
-    <Card  id="profile" style={{ width:"50%",marginTop:"7%",marginLeft:"25%",backgroundColor:"transparent"}}>
+    <Card  id="profile" style={{ width:"50%",marginTop:"7%",marginLeft:"25%",backgroundColor:"transparent",marginBottom:"16%"}}>
     {isAuthenticated?
         <div >
           
@@ -33,7 +33,7 @@ function Profile(){
         <ListGroup.Item  style={{color:"white",backgroundColor:"transparent"}}><h1 >Email: {user.email}</h1></ListGroup.Item>
       </ListGroup>
       </div>:
-          <h1></h1>}
+          <h1 style={{color:"white",marginLeft:"25%"}}>you must login first</h1>}
     </Card>
          
         
