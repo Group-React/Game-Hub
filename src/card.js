@@ -38,7 +38,7 @@ function Card1(data) {
   }
   return (
     <>
-    <div style={{display:"flex",marginTop:"3%",justifyContent:"space-between", flexWrap:"warp",fontFamily: "cursive"}}>
+    <div style={{display:"flex",marginTop:"3%",display:"flex", flexWrap:"warp",fontFamily: "cursive"}}>
         <Card id="design">
         <Card.Img style={{borderRadius: "30px"}} variant="top" src={data.image}/>
         <Card.Body>

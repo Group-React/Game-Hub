@@ -32,8 +32,8 @@ try {
 }
     }
     async function datagames(event){
-        //event.preventDefault();
-        let sh=event.target.value;
+        event.preventDefault();
+        let sh=event.target.h.value;
         const url = 'https://mmo-games.p.rapidapi.com/games';
 const options = {
 	method: 'GET',
@@ -125,7 +125,7 @@ return(
     </Carousel.Item>
   </Carousel>
   
-    <Form  className="d-flex"  onChange={datagames} id="Search">
+    <Form  className="d-flex"  onSubmit={datagames} id="Search">
         <Form.Control
           type="search"
           placeholder="Search"
@@ -148,7 +148,7 @@ return(
         }
         ):<h3 style={{marginLeft:"40%",marginTop:"2%", color:"white"}}>"Sorry, No searche result"</h3>
         }
-        <Pagination id="Peg" size="sm" style={{color:"white", marginLeft:"16%", marginBottom:"10%", position:"absolute"}} >{paginationItems}</Pagination>
+        <Pagination size="sm" style={{color:"white", marginLeft:"17.5%", marginBottom:"10%", position:"absolute"}} >{paginationItems}</Pagination>
     </div>
     </>
 )
