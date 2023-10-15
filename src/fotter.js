@@ -10,8 +10,9 @@ function Footer(){
       <a href="https://www.facebook.com/LTUC.JO"><img style={{width:"50px",marginTop:"2%"}} src="https://cdn-icons-png.flaticon.com/128/747/747374.png"></img></a>
       <a href="https://twitter.com/LTUCJO"><img style={{width:"50px" , marginLeft:"2%",marginTop:"2%"}} src="https://cdn-icons-png.flaticon.com/128/5968/5968830.png"></img></a>
       <a href="https://www.instagram.com/ltuc.jo/?hl=en"><img style={{width:"50px", marginLeft:"2%",marginTop:"2%"}} src="https://cdn-icons-png.flaticon.com/128/3661/3661391.png"></img></a>
-    </div>
   </div>
+    </div>
+    
   <div class="footer-center col-md-4 col-sm-6">
     <div>
       <i class="fa fa-map-marker"></i>

@@ -62,6 +62,7 @@ function Card1(data) {
           {data.short_description}
         </Modal.Body>
         <Modal.Footer id="modal" >
+          <p style={{color:"yellow",marginRight:"25%"}}>category ({data.genre})</p>
           <h4>(For Free)</h4>
           <Button id="modelButton" variant="secondary" onClick={handleShow}>
             Close
