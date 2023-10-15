@@ -4,7 +4,8 @@ function Footer(){
   <div class="footer-left col-md-4 col-sm-6">
     <p class="about" style={{marginTop:"%"}}>
       <span > About the company</span>
-      A group of students created a video game website after finishing the React HTML course
+      A group of students from LTUC college created a video game website after finishing the React HTML course
+      The group Members (Mohammad Abu-Alhija and Mus'ab Rabi)
       </p>
     <div >
       <a href="https://www.facebook.com/LTUC.JO"><img style={{width:"50px",marginTop:"2%"}} src="https://cdn-icons-png.flaticon.com/128/747/747374.png"></img></a>
