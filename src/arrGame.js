@@ -17,7 +17,7 @@ import Carousel from 'react-bootstrap/Carousel';
 const options = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': 'f87c9a307emsh4cdf243b35b30f0p182621jsnf625afbaee4a',
+		'X-RapidAPI-Key': `${process.env.REACT_APP_APIKEY}`,
 		'X-RapidAPI-Host': 'mmo-games.p.rapidapi.com'
 	}
 };
@@ -36,7 +36,7 @@ const options = {
 const options = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': 'f87c9a307emsh4cdf243b35b30f0p182621jsnf625afbaee4a',
+		'X-RapidAPI-Key': `${process.env.REACT_APP_APIKEY}`,
 		'X-RapidAPI-Host': 'mmo-games.p.rapidapi.com'
 	}
 };
