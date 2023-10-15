@@ -7,6 +7,7 @@ import LoginButton from './login';
 import { useAuth0 } from '@auth0/auth0-react';
 import LogoutButton from './logout';
 
+
 function Neav() {
   let {isAuthenticated,user}=useAuth0()
   console.log(user)
@@ -24,13 +25,8 @@ function Neav() {
           >
             <Nav.Link href="/" style={{color: "#1e1c34"}}>Store</Nav.Link>
             <Nav.Link href="/Library" style={{color: "#1e1c34"}}>Library</Nav.Link>
-            
-            <NavDropdown  title="More" id="drop">
-              <NavDropdown.Item href="#action3">Categories</NavDropdown.Item>
-              <NavDropdown.Item href="/News">
-                News
-              </NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Link href="/News" style={{color: "#1e1c34"}}>News</Nav.Link>
+
           </Nav>
         </Navbar.Collapse>
         {isAuthenticated?

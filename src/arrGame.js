@@ -22,14 +22,12 @@ const options = {
 	}
 };
 
-try {
+
 	const response = await fetch(url, options);
 	const result = await response.json();
     setItem(result)
-	console.log(result);
-} catch (error) {
-	console.error(error);
-}
+	
+ 
     }
     async function datagames(event){
         event.preventDefault();
@@ -141,7 +139,7 @@ return(
         {item && item.length !=0 ?gamesToDisplay.map(function(Item){
             return(
               <>
-              <Card1 image={Item.thumbnail} title={Item.title} short_description={Item.short_description}  showFavorites={true} />
+              <Card1 image={Item.thumbnail} title={Item.title} short_description={Item.short_description} genre={Item.genre}  showFavorites={true} />
               
               </>
             )
