@@ -15,7 +15,7 @@ function Neav() {
     
   <Navbar expand="lg" className="bg-body-tertiary"  data-bs-theme="dark" id="Navbar">
       <Container fluid>
-        <Navbar.Brand href="" style={{color: "#1e1c34",fontWeight:"bolder"}}>Geeks Store</Navbar.Brand>
+        <Navbar.Brand href="" style={{color: "#1e1c34",fontWeight:"bolder"}}>Game hub</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav

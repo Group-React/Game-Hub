@@ -21,23 +21,22 @@ function Footer(){
     </div>
     <div>
       <i class="fa fa-phone"></i>
-      <p> (+00) 0000 000 000</p>
+      <p> (+962)06 400 0700</p>
     </div>
     <div>
       <i class="fa fa-envelope"></i>
-      <p><a href="#">Geeks Store@gmail.com</a></p>
+      <p><a href="#">Game hub@gmail.com</a></p>
     </div>
   </div>
   <div class="footer-right col-md-4 col-sm-6">
-    <h2> Geeks Store<img style={{width:"50px" ,marginLeft:"2%"}} src="https://cdn-icons-png.flaticon.com/128/3511/3511752.png"></img></h2>
+    <h2>Game hub<img style={{width:"50px" ,marginLeft:"2%"}} src="https://cdn-icons-png.flaticon.com/128/3511/3511752.png"></img></h2>
     <p class="menu">
       <a href="/">Store</a> |
       <a href="/Library">Library</a> |
-      <a href="#">Categories</a> |
       <a href="/News"> News</a> |
       <a href="/profile">profile</a>
     </p>
-    <p class="name"> Geeks Store &copy; 2023</p>
+    <p class="name"> Game hub &copy; 2023</p>
   </div>
 </footer>
     )
